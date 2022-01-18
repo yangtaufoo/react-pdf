@@ -20,9 +20,9 @@ const resolveStyles = (container, style) =>
     flattenStyles,
   )(style);
 
-// Utils exported for SVG processing
+// Utils exported for SVG and page processing
 export { default as transformColor } from './transform/colors';
-
 export { default as processTransform } from './transform/transform';
+export { default as flatten } from './flatten';
 
 export default R.curryN(2, resolveStyles);
